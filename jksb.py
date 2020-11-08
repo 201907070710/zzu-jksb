@@ -24,8 +24,8 @@ def Wechat(title,content):
 
 class Log:
     def __init__(self):
-        self.uid = 201907070710
-        self.pwd = 09145542
+        self.uid = '201907070710'
+        self.pwd = '09145542'
         self.i = 1
         #self.fp = open(r"C:\today.txt", 'a+', encoding='utf8')
 

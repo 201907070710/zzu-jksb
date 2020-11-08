@@ -15,7 +15,7 @@ import re
 
 
 def Wechat(title,content):
-    api = "https://sc.ftqq.com/"+SCU124597Tef7d23847b449a53903d85ce0675e5eb5fa7e20941ef2+".send"
+    api = "https://sc.ftqq.com/SCU124597Tef7d23847b449a53903d85ce0675e5eb5fa7e20941ef2.send"
     data = {
     "text" : title,
     "desp" : content

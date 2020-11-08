@@ -15,7 +15,7 @@ import re
 
 
 def Wechat(title,content):
-    api = "https://sc.ftqq.com/"+os.environ["api"]+".send"
+    api = "https://sc.ftqq.com/"+SCU124597Tef7d23847b449a53903d85ce0675e5eb5fa7e20941ef2+".send"
     data = {
     "text" : title,
     "desp" : content
@@ -24,8 +24,8 @@ def Wechat(title,content):
 
 class Log:
     def __init__(self):
-        self.uid = os.environ["username"]
-        self.pwd = os.environ["password"]
+        self.uid = 201907070710
+        self.pwd = 09145542
         self.i = 1
         #self.fp = open(r"C:\today.txt", 'a+', encoding='utf8')
 
@@ -67,7 +67,9 @@ class Log:
                 # if '1' in init_text:
                     #self.fp.writelines(u"{} --> 打卡成功 -->已填报过了 无需重复填写  ^_^ \n ".format(time.strftime("%Y-%m-%d  %H : %M: %S", time.localtime())))
                     print(u"{}  已完成上报啦 ，无需重复啦 ^_^ ".format(time.strftime("%Y-%m-%d  %H : %M: %S", time.localtime(time.time() + 8*3600))))
+                    A="{}  已完成上报啦 ，无需重复啦 ^_^ ".format(time.strftime("%Y-%m-%d  %H : %M: %S", time.localtime(time.time() + 8*3600)))
                     time.sleep(5)
+                    Wechat("打卡成功",A)
                     sys.exit()
                 else:
                     wait(wd , 10 ,poll_frequency=1).until(ec.element_to_be_clickable((By.XPATH , '//*[@id="bak_0"]/div[13]/div[5]/div[4]'))).click()
